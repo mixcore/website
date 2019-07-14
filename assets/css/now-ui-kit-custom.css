@@ -1,0 +1,63 @@
+body {
+  color: #333;
+}
+#particles-js {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #223464;
+}
+h5,
+.h5 {
+  font-size: 1.2em;
+  line-height: 1.7em;
+}
+.info {
+  padding: 0px 0 0px;
+}
+.info .info-title {
+  margin: 25px 0 15px;
+  font-size: 22px;
+  letter-spacing: -0.5px;
+  color: #223464;
+}
+.info p {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+.desc {
+  color: #5d648e;
+  margin-bottom: 25 px;
+  margin-top: 12px;
+}
+
+.navbar .navbar-nav .nav-link:not(.btn) {
+  text-transform: none;
+}
+.footer ul li a {
+  text-transform: none;
+}
+.navbar p {
+  font-size: 1.5em;
+}
+.carousel-caption h5 {
+  color: #fff;
+}
+.space-50 {
+  height: 50px;
+  display: block;
+}
+.space-180 {
+  height: 180px;
+  display: block;
+}
