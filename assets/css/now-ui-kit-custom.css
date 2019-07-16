@@ -53,6 +53,46 @@ h5,
 .carousel-caption h5 {
   color: #fff;
 }
+
+[class*="btn-outline-"] {
+  white-space: nowrap;
+  display: inline-block;
+  line-height: 48px;
+  height: 50px;
+  padding: 0px 35px;
+  border: 2px solid;
+  background-color: transparent;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.btn:hover, .btn:focus, .btn:active, .btn:active:focus {
+  /* border-color: #6772e5;
+  color: #6772e5; */
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px);
+  -webkit-box-shadow: 0 7px 14px rgba(50,50,93,0.1), 0 3px 6px rgba(0,0,0,0.08);
+  box-shadow: 0 7px 14px rgba(50,50,93,0.1), 0 3px 6px rgba(0,0,0,0.08);
+}
+
+.ipad .lid {
+  width: 1024px;
+  height: 625px;
+  background: linear-gradient(45deg, #e5ebf2, #f3f8fb);
+  border-radius: 20px;
+  -webkit-box-shadow: inset 1px -4px 6px rgba(145,161,181,0.3);
+  box-shadow: inset 1px -4px 6px rgba(145,161,181,0.3);
+  position: absolute;
+}
+.ipad .carousel{
+  top: 25px;
+  bottom: 25px;
+  right: 25px;
+}
+
 .space-50 {
   height: 50px;
   display: block;
