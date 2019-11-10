@@ -2,6 +2,12 @@
   margin-bottom: 20px;
 }
 
+mark {
+  display: inline-block;
+  line-height: 0em;
+  padding-bottom: 0.5em;
+}
+
 /*      transitions */
 
 .presentation-page .front,
