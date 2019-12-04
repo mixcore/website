@@ -716,12 +716,6 @@
               <div class="text-center">
                 <!-- <h2>5,322</h2> -->
                 <h3 class=desc>Developers and Companies around the world using our products.</h3>
-                <span class="rating-desc" itemscope="" itemtype="http://schema.org/Product">
-                  <span itemprop="name">Mixcore CMS</span>
-                  <span itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating"> Rated
-                    <span itemprop="ratingValue">5</span> / 9676 based on <span itemprop="reviewCount">9676</span>
-                    reviews. | <a class="ratings" href="https://mixcore.org/review">Review Me</a> </span>
-                </span>
               </div>
             </div>
           </div>
@@ -1166,6 +1160,37 @@
       }
     }
   </script>
+  <!-- <span class="rating-desc" itemscope="" itemtype="http://schema.org/Product">
+    <span itemprop="name">Mixcore CMS</span>
+    <span itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating"> Rated
+      <span itemprop="ratingValue">5</span> / 9676 based on <span itemprop="reviewCount">9676</span>
+      reviews. | <a class="ratings" href="https://mixcore.org/review">Review Me</a> </span>
+  </span> -->
+  <script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "Review",
+    "itemReviewed": {
+        "@type": "product",
+        "name": "Opensource CMS in ASP.NET Core / Dotnet Core"
+    },
+    "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+    },
+    "name": "Totally impressed with the reasonable rates with coding quality",
+    "author": {
+        "@type": "Person",
+        "name": "Bill Gates"
+    },
+    "reviewBody": "I was not only impressed with the reasonable rates for the services provided but was also happy with the end product. We missed the completion deadline, but for reasons that were largely outside the control of Satva Solutions. They remained in communication with us every step of the way. I will definitely call upon Satva again should I need them in the future.",
+    "datePublished": "2019-12-01",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Microsoft"
+    }
+}</script>
 </body>
 
 </html>
