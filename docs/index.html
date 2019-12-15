@@ -30,7 +30,33 @@
   <link href="./assets/css/now-ui-kit-custom.css" rel="stylesheet" />
   <link href="./assets/css/micon.min.css" rel="stylesheet" />
 
-  <style> mark { display: inline-block; line-height: 0em; padding-bottom: 0.5em; }  .highlight { background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #FFD0AE 50%); }  .highlight-green { background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #bfffbc 50%); }  .highlight-blue { background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #bce3ff 50%); }  .highlight-red { background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #ffc9c9 50%); }  .navbar .navbar-nav .nav-link:not(.btn) { font-size: 1em; } </style>
+  <style>
+    mark {
+      display: inline-block;
+      line-height: 0em;
+      padding-bottom: 0.5em;
+    }
+
+    .highlight {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #FFD0AE 50%);
+    }
+
+    .highlight-green {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #bfffbc 50%);
+    }
+
+    .highlight-blue {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #bce3ff 50%);
+    }
+
+    .highlight-red {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #ffc9c9 50%);
+    }
+
+    .navbar .navbar-nav .nav-link:not(.btn) {
+      font-size: 1em;
+    }
+  </style>
 
   <!-- Google Tag Manager -->
   <script>(function (w, d, s, l, i) {
@@ -40,12 +66,35 @@
       }); var f = d.getElementsByTagName(s)[0],
         j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
           'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-PLHMKGB');</script>
+    })(window, document, 'script', 'dataLayer', 'GTM-PLHMKGB');
+
+
+    // This is the "Offline page" service worker
+
+    // Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
+
+    // Check compatibility for the browser we're running this in
+    if ("serviceWorker" in navigator) {
+      if (navigator.serviceWorker.controller) {
+        console.log("[PWA Builder] active service worker found, no need to register");
+      } else {
+        // Register the service worker
+        navigator.serviceWorker
+          .register("sw.js", {
+            scope: "./"
+          })
+          .then(function (reg) {
+            console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+          });
+      }
+    }
+
+  </script>
   <!-- End Google Tag Manager -->
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134154017-1"></script>
-  <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date());  gtag('config', 'UA-134154017-1'); </script>
+  <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-134154017-1'); </script>
 
   <script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>
     {
@@ -162,7 +211,19 @@
   <link rel="alternate" type="application/rss+xml" title="Mixcore CMS &raquo; Comments Feed"
     href="https://mixcore.org/comments/feed/" />
 
-  <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png"> <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png"> <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png"> <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png"> <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png"> <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png"> <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png"> <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png"> <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png"> <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/android-icon-192x192.png"> <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png"> <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png"> <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
   <!-- <link rel="manifest" href="/assets/icons/manifest.json"> -->
   <link rel='manifest' href='/manifest.webmanifest'>
 
@@ -199,29 +260,6 @@
     //   js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
     //   fjs.parentNode.insertBefore(js, fjs);
     // }(document, 'script', 'facebook-jssdk'));
-
-
-    // This is the "Offline page" service worker
-
-    // Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
-
-    // Check compatibility for the browser we're running this in
-    if ("serviceWorker" in navigator) {
-      if (navigator.serviceWorker.controller) {
-        console.log("[PWA Builder] active service worker found, no need to register");
-      } else {
-        // Register the service worker
-        navigator.serviceWorker
-          .register("sw.js", {
-            scope: "./"
-          })
-          .then(function (reg) {
-            console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
-          });
-      }
-    }
-
-
 
 
   </script>
@@ -387,7 +425,7 @@
           <!-- For Developer -->
           <div class=space-50></div>
           <div class=row>
-            
+
             <div class="col-md-7">
               <img alt="Mixcore CMS" src="./assets/img/homepage/software_engineers.svg">
             </div>
@@ -448,7 +486,7 @@
             <div class="col-md-7 ipad">
 
               <img alt="Mixcore CMS" src="./assets/img/homepage/marketing.svg">
-              
+
             </div>
           </div>
 
@@ -705,7 +743,7 @@
               <h4 class="description">You need more information? Drop us a message to contact@mixcore.org</h4>
             </div>
             <div class="col-md-5 ml-auto mr-auto">
-              
+
             </div>
           </div>
         </div>
