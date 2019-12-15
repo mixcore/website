@@ -275,7 +275,8 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 
-    // This is the service worker with the Advanced caching
+
+    // This is the "Offline page" service worker
 
     // Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
 
@@ -286,7 +287,7 @@
       } else {
         // Register the service worker
         navigator.serviceWorker
-          .register("pwabuilder-sw.js", {
+          .register("sw.js", {
             scope: "./"
           })
           .then(function (reg) {
@@ -295,35 +296,6 @@
       }
     }
 
-
-    let deferredPrompt = null;
-
-    window.addEventListener('beforeinstallprompt', (e) => {
-      // Prevent Chrome 67 and earlier from automatically showing the prompt
-      e.preventDefault();
-      // Stash the event so it can be triggered later.
-      deferredPrompt = e;
-    });
-
-    async function install() {
-      if (deferredPrompt) {
-        deferredPrompt.prompt();
-        console.log(deferredPrompt)
-        deferredPrompt.userChoice.then(function (choiceResult) {
-
-          if (choiceResult.outcome === 'accepted') {
-            console.log('Your PWA has been installed');
-          } else {
-            console.log('User chose to not install your PWA');
-          }
-
-          deferredPrompt = null;
-
-        });
-
-
-      }
-    }
 
 
 
@@ -483,7 +455,8 @@
             <div class="col text-left">
               <a href="https://getbootstrap.com" target=_blank rel=tooltip
                 title="Build responsive, mobile-first projects on the web with the world’s most popular front-end component library.">
-                <img alt="Mixcore CMS" src="https://www.pinclipart.com/picdir/big/35-353932_bootstrap-bootstrap-4-logo-png-clipart.png"
+                <img alt="Mixcore CMS"
+                  src="https://www.pinclipart.com/picdir/big/35-353932_bootstrap-bootstrap-4-logo-png-clipart.png"
                   width="40%">
               </a>
             </div>

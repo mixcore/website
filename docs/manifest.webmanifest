@@ -8,6 +8,7 @@
     "lang": "English",
     "display": "fullscreen",
     "theme_color": "green",
+    "background_color": "white",
     "icons": [
         {
             "src": "\/assets\/icons\/android-icon-36x36.png",
