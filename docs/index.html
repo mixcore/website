@@ -110,8 +110,7 @@
   </script> -->
   <!-- End of Async Drift Code -->
 
-  <script type='application/ld+json'
-    class='yoast-schema-graph yoast-schema-graph--main'>
+  <script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>
     {
       "@context":"https://schema.org",
       "@graph":[
@@ -222,38 +221,38 @@
       ]
    }
   </script>
-  <link rel="alternate" type="application/rss+xml" title="Mixcore CMS &raquo; Feed"
-    href="https://mixcore.org/feed/" />
+  <link rel="alternate" type="application/rss+xml" title="Mixcore CMS &raquo; Feed" href="https://mixcore.org/feed/" />
   <link rel="alternate" type="application/rss+xml" title="Mixcore CMS &raquo; Comments Feed"
     href="https://mixcore.org/comments/feed/" />
 
-    <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/icons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
-    <link rel="manifest" href="/icons/manifest.json">
+  <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+  <link rel="manifest" href="/icons/manifest.json">
+  <link rel='manifest' href='/manifest.webmanifest'>
 
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
-  <meta property="og:title" content="Mixcore - Top Best Open Source Enterprise CMS Powered by ASP.NET Core / Dotnet Core Framework | mixcore.org" />
+  <meta property="og:title"
+    content="Mixcore - Top Best Open Source Enterprise CMS Powered by ASP.NET Core / Dotnet Core Framework | mixcore.org" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://mixcore.org/" />
   <meta property="og:site_name" content="Mixcore CMS" />
   <meta property="og:description"
     content="Mixcore CMS is a top best open source enterprise CMS platform that Powered by ASP.NET Core / Dotnet Core for building amazing digital experiences. It&#039;s made by a dedicated community. Anyone can use it, and it will always be free." />
-  <meta property="og:image"
-    content="https://mixcore.org/assets/img/CMS_c3xocc.jpg" />
+  <meta property="og:image" content="https://mixcore.org/assets/img/CMS_c3xocc.jpg" />
 
 </head>
 
@@ -274,7 +273,30 @@
       js = d.createElement(s); js.id = id;
       js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
       fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+    }(document, 'script', 'facebook-jssdk'));
+
+    // This is the service worker with the Advanced caching
+
+    // Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
+
+    // Check compatibility for the browser we're running this in
+    if ("serviceWorker" in navigator) {
+      if (navigator.serviceWorker.controller) {
+        console.log("[PWA Builder] active service worker found, no need to register");
+      } else {
+        // Register the service worker
+        navigator.serviceWorker
+          .register("pwabuilder-sw.js", {
+            scope: "./"
+          })
+          .then(function (reg) {
+            console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+          });
+      }
+    }
+
+
+  </script>
 
   <!-- Your customer chat code -->
   <div class="fb-customerchat" attribution=setup_tool page_id="396455484425991" theme_color="#13cf13">
