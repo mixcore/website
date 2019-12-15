@@ -5,11 +5,13 @@
 /* FONT PATH
  * -------------------------- */
 @font-face {
+  font-display: swap;
   font-family: 'micon';
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/micon.eot");
-  src: url("../fonts/micon.eot?#iefix") format("embedded-opentype"), url("../fonts/micon.woff2") format("woff2"), url("../fonts/micon.woff") format("woff"), url("../fonts/micon.ttf") format("truetype"), url("../fonts/micon.svg#micon") format("svg"); }
+  src: url("../fonts/micon.eot?#iefix") format("embedded-opentype"), url("../fonts/micon.woff2") format("woff2"), url("../fonts/micon.woff") format("woff"), url("../fonts/micon.ttf") format("truetype"), url("../fonts/micon.svg#micon") format("svg"); 
+}
 
 .mi {
   font-family: 'micon';
