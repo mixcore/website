@@ -70,10 +70,10 @@
 
 //This is the service worker with the Advanced caching
 
-const CACHE = "pwabuilder-adv-cache";
+const CACHE = "pw-offline-page";
 const precacheFiles = [
   /* Add an array of files to precache for your app */
-  /.*/
+  'https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/illustration.jpg'
 ];
 
 // TODO: replace the following with the correct offline fallback page i.e.: const offlineFallbackPage = "offline.html";
