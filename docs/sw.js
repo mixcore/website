@@ -86,7 +86,7 @@ const networkFirstPaths = [
 const avoidCachingPaths = [
   /* Add an array of regex of paths that shouldn't be cached */
   // Example: /\/api\/.*/
-  '/\/collect\/.*/'
+  '/\/collect?.*/'
 ];
 
 function pathComparer(requestUrl, pathRegEx) {
