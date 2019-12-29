@@ -20,6 +20,8 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://mixcore.org/fr/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://mixcore.org/es/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://mixcore.org/de/" />
+		<xhtml:link rel="alternate" hreflang="de-de" href="https://mixcore.org/de/" />
+		<xhtml:link rel="alternate" hreflang="de-ch" href="https://mixcore.org/de/" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://mixcore.org/ar/" />
 
   </url>
