@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cn">
+<html lang="hi">
 
 <head>
   <meta charset="utf-8" />
@@ -8,18 +8,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta http-equiv="Cache-control" content="public">
   <title>
-    顶级开源ASP.NET Core CMS /开源Dotnet Core CMS /开源企业CMS - Mixcore CMS
+    शीर्ष ओपन सोर्स ASP.NET Core CMS / ओपन सोर्स Dotnet Core CMS / ओपन सोर्स एंटरप्राइज CMS - Mixcore CMS
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no' name='viewport' />
   <meta name="description"
-    content="Mixcore CMS是一款顶级的开源ASP.NET核心内容管理系统（CMS）/开源Dotnet核心内容管理系统（CMS）/开源企业内容管理系统（CMS），可用于构建出色的数字体验。" />
+    content="मिक्सकोर सीएमएस अद्भुत डिजिटल अनुभवों के निर्माण के लिए एक शीर्ष ओपन सोर्स ASP.NET कोर कंटेंट मैनेजमेंट सिस्टम (CMS) / ओपन सोर्स डॉटनेट कोर कंटेंट मैनेजमेंट सिस्टम (CMS) / ओपन सोर्स एंटरप्राइज कंटेंट मैनेजमेंट सिस्टम (CMS) है।" />
   <meta name="generator" content="Mixcore CMS (https://mixcore.org)" />
   <link rel="amphtml" href="https://mixcore.org/amp/index.amp.html">
   <link rel="canonical" href="https://mixcore.org">
 
-  <link rel="alternate" hreflang="cn" href="https://mixcore.org/zh-cn/" />
+  <link rel="alternate" hreflang="hi" href="https://mixcore.org/hi/" />
+  <link rel="alternate" hreflang="zh" href="https://mixcore.org/zh/" />
+  <link rel="alternate" hreflang="vi" href="https://mixcore.org/vi/" />
+  <link rel="alternate" hreflang="ru" href="https://mixcore.org/ru/" />
+  <link rel="alternate" hreflang="pt" href="https://mixcore.org/pt/" />
+  <link rel="alternate" hreflang="nl" href="https://mixcore.org/nl/" />
+  <link rel="alternate" hreflang="ja" href="https://mixcore.org/ja/" />
+  <link rel="alternate" hreflang="he" href="https://mixcore.org/he/" />
+  <link rel="alternate" hreflang="fr" href="https://mixcore.org/fr/" />
+  <link rel="alternate" hreflang="es" href="https://mixcore.org/es/" />
+  <link rel="alternate" hreflang="de" href="https://mixcore.org/de/" />
+  <link rel="alternate" hreflang="ar" href="https://mixcore.org/ar/" />
   <link rel="alternate" hreflang="en" href="https://mixcore.org/" />
-  <link rel="alternate" hreflang="de" href="https://mixcore.org/de-de/" />
   <link rel="alternate" hreflang="x-default" href="https://mixcore.org/" />
 
   <!--     Fonts and icons     -->
@@ -85,7 +95,7 @@
         // Register the service worker
         navigator.serviceWorker
           .register("sw.js", {
-            scope: "../"
+            scope: "./"
           })
           .then(function (reg) {
             console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
@@ -124,12 +134,12 @@
   <meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <meta property="og:title"
-    content="Mixcore CMS-由ASP.NET Core / Dotnet Core Framework支持的最佳开源企业CMS | mixcore.org" />
+    content="Mixcore - Top Best Open Source Enterprise CMS Powered by ASP.NET Core / Dotnet Core Framework | mixcore.org" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://mixcore.org/" />
   <meta property="og:site_name" content="Mixcore CMS" />
   <meta property="og:description"
-    content="Mixcore CMS是用于构建惊人数字体验的顶级最佳开源企业ASP.NET Core / Dotnet Core CMS。 它是由敬业的社区制作的。 任何人都可以使用它，并且它将永远免费。" />
+    content="Mixcore CMS is a Top Best Open Source Enterprise ASP.NET Core / Dotnet Core CMS for building amazing digital experiences. It&#039;s made by a dedicated community. Anyone can use it, and it will always be free." />
   <meta property="og:image" content="https://mixcore.org/assets/img/CMS_c3xocc.jpg" />
 </head>
 
@@ -192,9 +202,13 @@
           <li> <a class="nav-link social btn-github text-dark" href="https://github.com/mixcore/mix.core"
               target="_blank">
               <i class="fab fa-github"></i> Github</a> </li>
-              <li> <a class="nav-link text-success" href="https://mixcore.org"
-                  target="_blank">
-                  <i class="fas fa-globe"></i> English</a> </li>
+          <li> <a class="nav-link text-success" href="https://mixcore.org" target="_blank">
+              <i class="fas fa-globe"></i> English</a> </li>
+          <!-- <li class="text-success nav-link"><i class="fas fa-globe"></i> 
+                <a href="https://mixcore.org/de/" target="_blank">DE</a> |
+                <a href="https://mixcore.org/zh/" target="_blank">CN</a> |
+                <a href="https://mixcore.org/ru/" target="_blank">RU</a>
+              </li> -->
           <!-- <li class="nav-item">
             <a class="nav-link btn btn-primary" href="https://www.creative-tim.com/product/now-ui-kit-pro"
               target="_blank">
@@ -213,8 +227,9 @@
         <div class="row">
 
           <div class="col-md-6 ml-auto mr-auto my-auto">
-            <h1 class="font-weight-light">完全开源的ASP.Net Core / Dotnet Core CMS UI工具包</h1>
-            <h4 class="desc">创建多功能网站，移动应用程序和应用程序服务。 构建在ASP.Net Core / Dotnet Core ，SignalR，Angular.JS和Bootstrap之上。</h4>
+            <h1 class="font-weight-light">पूरी तरह से ओपन सोर्स ASP.Net कोर / डॉटनेट कोर CMS UI टूलकिट</h1>
+            <h4 class="desc">बहुउद्देश्यीय वेबसाइट, मोबाइल ऐप और ऐप सेवाएँ बनाने के लिए। ASP.Net कोर / डॉटनेट कोर ,
+              सिग्नलआर, कोणीय.जेएस और बूटस्ट्रैप के शीर्ष पर निर्मित।</h4>
           </div>
           <div class="col-md-6"> <img alt="Mixcore CMS"
               src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/illustration.jpg"
@@ -228,7 +243,7 @@
       <div class="section section-do" id=whatwedo>
         <div class=container>
           <div class="col-md-8 ml-auto mr-auto text-center">
-            <h2>专业领域</h2>
+            <h2>विशेषज्ञता का क्षेत्र</h2>
             <div class=space-50></div>
           </div>
           <div class=row>
@@ -236,8 +251,9 @@
               <div class=info>
                 <div class="icon icon-info icon-round icon-lg"> <i class="now-ui-icons education_atom"></i> </div>
                 <div class=description>
-                  <h4 class=info-title>创建Web框架</h4>
-                  <h5 class=desc>我们已经创建了可以在您的下一个项目中为您提供帮助的工具。 从简单到复杂的工具包，我们都能满足您有关Web /移动开发的所有领域的需求。</h5>
+                  <h4 class=info-title>वेब फ्रेमवर्क बनाएं</h4>
+                  <h5 class=desc>हमने ऐसे उपकरण बनाए हैं जो आपकी अगली परियोजना में आपकी मदद करेंगे। सरल से जटिल किट्स
+                    तक, हमने आपको वेब / मोबाइल विकास से संबंधित सभी क्षेत्रों में शामिल कर लिया है।</h5>
                 </div>
               </div>
             </div>
@@ -245,8 +261,10 @@
               <div class=info>
                 <div class="icon icon-danger icon-round icon-lg"> <i class="now-ui-icons ui-2_chat-round"></i> </div>
                 <div class=description>
-                  <h4 class=info-title>分享免费赠品</h4>
-                  <h5 class=desc>我们用于创建产品的所有内容都可以根据MIT许可证免费下载。 人们已经在数千个站点中信任并使用了它们。</h5>
+                  <h4 class=info-title>शेयर मुफ्त</h4>
+                  <h5 class=desc>हमारे द्वारा अपने उत्पादों को बनाने के लिए उपयोग की जाने वाली सभी चीजें MIT लाइसेंस के
+                    तहत मुफ्त में डाउनलोड की जा सकती हैं। लोगों ने पहले ही हजारों साइटों पर भरोसा किया है और उनका उपयोग
+                    किया है।</h5>
                 </div>
               </div>
             </div>
@@ -254,8 +272,9 @@
               <div class=info>
                 <div class="icon icon-success icon-round icon-lg"> <i class="now-ui-icons objects_spaceship"></i> </div>
                 <div class=description>
-                  <h4 class=info-title>力量马拉松</h4>
-                  <h5 class=desc>我们为世界各地的许多黑客马拉松提供了赞助，以提供制作出色的Web应用程序所需的工具。 我们的Web工具与初创公司并驾齐驱。</h5>
+                  <h4 class=info-title>पावर हैकथॉन</h4>
+                  <h5 class=desc>हमने दुनिया भर में कई हैकथॉन को उन उपकरणों के साथ प्रायोजित किया है, जिन्हें उन्हें
+                    भयानक वेब एप्लिकेशन बनाने की आवश्यकता है। हमारे वेब उपकरण स्टार्टअप के साथ हाथ से चलते हैं।</h5>
                 </div>
               </div>
             </div>
@@ -266,8 +285,9 @@
         <div class=container>
           <div class=row>
             <div class="col-md-8 ml-auto mr-auto text-center">
-              <h2>我们的技术</h2>
-              <h4 class=desc>我们的产品建立在现代框架之上 。 具有相同框架的编码版本和设计版本，您的设计师和开发人员将使用相同的语言。</h4>
+              <h2>हमारी तकनीकें</h2>
+              <h4 class=desc>हमारे उत्पादों को आधुनिक चौखटे के ऊपर बनाया गया है। एक ही ढांचे के लिए कोडित और डिज़ाइन किए
+                गए संस्करण होने से, आपके डिजाइनर और डेवलपर्स एक ही भाषा में बात करेंगे।</h4>
             </div>
           </div>
 
@@ -301,8 +321,10 @@
         <div class=container>
           <div class=row>
             <div class="col-md-8 ml-auto mr-auto text-center">
-              <h2>为您提供解决方案</h2>
-              <h4 class=desc>由专门的经验开发团队从头开始创建网站可能非常昂贵。 使用我们的解决方案，您不必担心任何企业技术解决方案 。 通过专注于业务模型节省时间和金钱。</h4>
+              <h2>आपके लिए समाधान</h2>
+              <h4 class=desc>समर्पित अनुभव विकास टीम के साथ खरोंच से अपना वेब बनाना बहुत महंगा हो सकता है। हमारे
+                समाधानों का उपयोग करके आपको किसी भी उद्यम तकनीकी समाधान के बारे में चिंता करने की आवश्यकता नहीं है।
+                बिजनेस मॉडल पर ध्यान केंद्रित करके समय और पैसा बचाएं।</h4>
             </div>
           </div>
           <!-- For Developer -->
@@ -318,15 +340,18 @@
                   <i class="mi mi-Code"></i>
                 </div>
                 <div class=description>
-                  <h4 class=info-title>面向开发人员的<strong>mixcore</strong></h4>
-                  <p class=desc><strong>使用Mixcore构建开放的Web应用程序和应用程序服务</strong><br /></p>
+                  <h4 class=info-title>डेवलपर्स के लिए <strong>मिक्सकोर</strong></h4>
+                  <p class=desc><strong>मिक्सकोर के साथ ओपन वेब ऐप्स और एप्लिकेशन सेवाओं का निर्माण करें</strong> <br />
+                  </p>
                   <p class=desc>
-                    Mixcore是一个开源企业CMS ，可帮助您大规模提供雄心勃勃，优雅且高性能的数字体验。</p>
+                    मिक्सकोर एक ओपन-सोर्स एंटरप्राइज सीएमएस है जो आपको बड़े पैमाने पर महत्वाकांक्षी, सुरुचिपूर्ण और
+                    प्रदर्शनकारी डिजिटल अनुभव प्रदान करने में मदद करता है।</p>
                   <p class=desc>
-                    利用API优先，动态模块属性维度的架构， 强大的基础架构 /配置管理以及无与伦比的可扩展性来构建未来的网络。
+                    भविष्य के वेब के निर्माण के लिए एपीआई-प्रथम, डायनामिक मॉड्यूल-अट्रैक्शन डाइमेंशन आर्किटेक्चर, मजबूत
+                    इंफ्रास्ट्रक्चर / कॉन्फ़िगरेशन मैनेजमेंट और अद्वितीय एक्स्टेंसिबिलिटी का लाभ उठाएं।
                   </p>
                   <a href="https://github.com/mixcore/mix.core/releases" target=_blank
-                    class="btn btn-outline-primary shadow-sm ">现在安装！</a>
+                    class="btn btn-outline-primary shadow-sm ">अभी स्थापित करें!</a>
                 </div>
               </div>
             </div>
@@ -340,17 +365,19 @@
                   <i class="mi mi-Bullseye"></i>
                 </div>
                 <div class=description>
-                  <h4 class=info-title>市场营销的<strong>mixcore</strong></h4>
-                  <p class=desc><strong>在充满模板和组件的世界中，保持原创</strong> <br /></p>
+                  <h4 class=info-title>विपणन के लिए मिश्रण</h4>
+                  <p class=desc><strong>टेम्प्लेट और घटकों से भरी दुनिया में, मूल रहें</strong> <br /></p>
                   <p class=desc>
-                    Mixcore是您的营销生态系统的重要组成部分-通过内容至上，商业至上和社区至上的营销解决方案来实现最雄心勃勃的业务目标 。</span>.
+                    मिक्सकोर आपके मार्केटिंग इकोसिस्टम का एक अनिवार्य हिस्सा है - सबसे महत्वाकांक्षी व्यावसायिक लक्ष्यों
+                    को प्राप्त करने के लिए सामग्री-पहले, वाणिज्य-पहले और समुदाय-पहले मार्केटिंग समाधान के साथ।
                   </p>
                   <p class=desc>
-                    灵活的基础架构设计和令人难以置信的可扩展性，作为针对多渠道的完整Web /应用解决方案，意味着您在市场上的代表与您的品牌一样独特。
+                    फ्लेक्सिबल इन्फ्रास्ट्रक्चर डिज़ाइन और मल्टी-चैनल के लिए पूर्ण वेब / ऐप-सॉल्यूशन के रूप में
+                    अविश्वसनीय स्केलेबिलिटी, का मतलब है कि आपका प्रतिनिधित्व-इन-मार्केट आपके ब्रांड की तरह अद्वितीय है।
                   </p>
 
                   <a href="https://github.com/mixcore/mix.core/releases" target=_blank
-                    class="btn btn-outline-info shadow-sm ">立即探索！</a>
+                    class="btn btn-outline-info shadow-sm ">अब अन्वेषण करें!</a>
                 </div>
               </div>
             </div>
@@ -375,17 +402,19 @@
                   <i class="mi mi-AreaChart"></i>
                 </div>
                 <div class=description>
-                  <h4 class=info-title>代理商的<strong>mixcore</strong></h4>
-                  <p class=desc><strong>实现客户的抱负</strong> <br /></p>
+                  <h4 class=info-title>एजेंसियों के लिए मिश्रण</h4>
+                  <p class=desc><strong>अपने ग्राहकों की महत्वाकांक्षाओं को प्राप्त करें</strong> <br /></p>
                   <p class=desc>
-                    借助混合核数字体验来实现客户的业务目标 ，这些体验可扩大其品牌，促进参与度并推动转化。</p>
+                    मिक्सकोर डिजिटल अनुभवों के साथ अपने ग्राहक के व्यावसायिक लक्ष्यों को प्राप्त करें जो उनके ब्रांड को
+                    बढ़ावा देते हैं, सगाई को बढ़ावा देते हैं, और रूपांतरण चलाते हैं।</p>
                   <p class=desc>
-                    <span class="highlight-red">可定制和可扩展以符合客户的野心。 使用Mixcore的API-first和Dynamic Module-Attribute
-                      Dimention体系结构以及第三方集成来构建理想的解决方案。 获得最大的开源社区的力量。
+                    अनुकूलन और स्केलेबल अपने ग्राहकों की महत्वाकांक्षा से मेल खाने के लिए। मिक्सकोर के एपीआई-प्रथम और
+                    डायनामिक मॉड्यूल-एट्रीब्यूट डायमेंशन आर्किटेक्चर और थर्ड पार्टी इंटीग्रेशन का उपयोग करके ड्रीम
+                    सॉल्यूशन का निर्माण करें। सबसे बड़े मुक्त स्रोत समुदाय की शक्ति प्राप्त करें।
                   </p>
 
                   <a href="https://github.com/mixcore/mix.core/releases" target=_blank
-                    class="btn btn-outline-danger shadow-sm ">现在就开始与我们合作！</a>
+                    class="btn btn-outline-danger shadow-sm ">अब हमारे साथ शुरू करो!</a>
                 </div>
               </div>
             </div>
@@ -400,8 +429,8 @@
         <div class=container>
           <div class=row>
             <div class="col-md-8 ml-auto mr-auto text-center">
-              <h2>开箱即用的功能</h2>
-              <h4 class=desc>开源！ 但是， mixcore提供了您的网站/应用程序所需的一切！</h4>
+              <h2>बॉक्स सुविधाओं से बाहर</h2>
+              <h4 class=desc>खुला स्त्रोत! हालाँकि, मिक्सकोर को हर वह चीज़ मिली जो आपको अपनी वेबसाइट / एप्लिकेशन के लिए चाहिए!</h4>
             </div>
           </div>
           <div class=space-50></div>
@@ -409,30 +438,30 @@
             <div class="col-md-3">
               <div class="info text-center">
                 <div class="icon"> <i class="mi mi-Group"></i> </div>
-                <h4 class="info-title">可靠性</h4>
-                <p class="description">成员角色和权限。</p>
+                <h4 class="info-title">विश्वसनीयता</h4>
+                <p class="description">सदस्य भूमिकाओं और अनुमतियाँ।</p>
                 <!-- <a href="#" class="text-right">Read More...</a> -->
               </div>
             </div>
             <div class="col-md-3">
               <div class="info text-center">
                 <div class="icon"> <i class="mi mi-LaptopSecure"></i> </div>
-                <h4 class="info-title">高安全性</h4>
-                <p class="description">强大的数据加密和安全合规性。</p>
+                <h4 class="info-title">उच्च सुरक्षा</h4>
+                <p class="description">मजबूत डेटा एन्क्रिप्शन और सुरक्षा अनुपालन।</p>
               </div>
             </div>
             <div class="col-md-3">
               <div class="info text-center">
                 <div class="icon"> <i class="mi mi-Globe"></i> </div>
-                <h4 class="info-title">多种语言</h4>
-                <p class="description">灵活的多语言内容迁移。</p>
+                <h4 class="info-title">बहुभाषी</h4>
+                <p class="description">लचीली बहुभाषी सामग्री प्रवासन।</p>
               </div>
             </div>
             <div class="col-md-3">
               <div class="info text-center">
                 <div class="icon"> <i class="mi mi-LightningBolt"></i> </div>
-                <h4 class="info-title">高性能</h4>
-                <p class="description">毫秒响应时间。</p>
+                <h4 class="info-title">उच्च प्रदर्शन</h4>
+                <p class="description">मिलीसेकंड प्रतिक्रिया समय।</p>
               </div>
             </div>
           </div>
@@ -441,30 +470,30 @@
             <div class="col-md-3">
               <div class="info text-center">
                 <div class="icon"> <i class="mi mi-Devices2"></i> </div>
-                <h4 class="info-title">跨平台</h4>
-                <p class="description">由.NET Core提供支持，可在所有地方运行。</p>
+                <h4 class="info-title">प्लेटफ़ॉर्म पार करें</h4>
+                <p class="description">.NET कोर द्वारा संचालित और हर जगह चलाते हैं।</p>
                 <!-- <a href="#" class="text-right">Read More...</a> -->
               </div>
             </div>
             <div class="col-md-3">
               <div class="info text-center">
                 <div class="icon"> <i class="mi mi-Code"></i> </div>
-                <h4 class="info-title">在线编码</h4>
-                <p class="description">Visual Studio Code的内心深处。</p>
+                <h4 class="info-title">ऑनलाइन कोडिंग</h4>
+                <p class="description">विजुअल स्टूडियो कोड का दिल अंदर।</p>
               </div>
             </div>
             <div class="col-md-3">
               <div class="info text-center">
                 <div class="icon"> <i class="mi mi-Design"></i> </div>
-                <h4 class="info-title">可定制的设计</h4>
-                <p class="description">建立任何类型的网站。</p>
+                <h4 class="info-title">अनुकूलन डिजाइन</h4>
+                <p class="description">किसी भी प्रकार की वेबसाइट का निर्माण करें।</p>
               </div>
             </div>
             <div class="col-md-3">
               <div class="info text-center">
                 <div class="icon"> <i class="mi mi-SearchAndApps"></i> </div>
-                <h4 class="info-title">SEO友好</h4>
-                <p class="description">无需额外的插件。</p>
+                <h4 class="info-title">एसईओ के अनुकूल</h4>
+                <p class="description">कोई अतिरिक्त प्लगइन की आवश्यकता नहीं है।</p>
               </div>
             </div>
           </div>
@@ -473,30 +502,30 @@
             <div class="col-md-3">
               <div class="info text-center">
                 <div class="icon"> <i class="mi mi-Media"></i> </div>
-                <h4 class="info-title">媒体管理</h4>
-                <p class="description">您的网站/应用程序的多种文件格式。</p>
+                <h4 class="info-title">मीडिया प्रबंधन</h4>
+                <p class="description">आपकी वेबसाइट / एप्लिकेशन के लिए एकाधिक फ़ाइल स्वरूप।</p>
                 <!-- <a href="#" class="text-right">Read More...</a> -->
               </div>
             </div>
             <div class="col-md-3">
               <div class="info text-center">
                 <div class="icon"> <i class="mi mi-Walk"></i> </div>
-                <h4 class="info-title">随时随地管理</h4>
-                <p class="description">在所需的任何地方进行管理和编码。</p>
+                <h4 class="info-title">जाओ पर प्रबंधित करें</h4>
+                <p class="description">प्रबंधित करें और कोड हर जगह आप चाहते हैं।</p>
               </div>
             </div>
             <div class="col-md-3">
               <div class="info text-center">
                 <div class="icon"> <i class="mi mi-FingerInking"></i> </div>
-                <h4 class="info-title">方便易用</h4>
-                <p class="description">不需要深厚的技术知识。</p>
+                <h4 class="info-title">आसान और सुलभ</h4>
+                <p class="description">गैर गहरी तकनीक ज्ञान की आवश्यकता</p>
               </div>
             </div>
             <div class="col-md-3">
               <div class="info text-center">
                 <div class="icon"> <i class="mi mi-AreaChart"></i> </div>
-                <h4 class="info-title">分析工具</h4>
-                <p class="description">在Google Analytics（分析）仪表板内部，无需额外的插件。</p>
+                <h4 class="info-title">एनालिटिक्स</h4>
+                <p class="description">Google Analytics डैशबोर्ड के अंदर और अतिरिक्त प्लगइन की आवश्यकता नहीं है।</p>
               </div>
             </div>
           </div>
@@ -505,37 +534,37 @@
             <div class="col-md-3">
               <div class="info text-center">
                 <div class="icon"> <i class="mi mi-MapLayers"></i> </div>
-                <h4 class="info-title">动态模块化架构</h4>
-                <p class="description">强大的模块层和属性集功能。</p>
+                <h4 class="info-title">गतिशील मॉड्यूलर वास्तुकला</h4>
+                <p class="description">शक्तिशाली मॉड्यूल परतों और विशेषता सेट सुविधा।</p>
                 <!-- <a href="#" class="text-right">Read More...</a> -->
               </div>
             </div>
             <div class="col-md-3">
               <div class="info text-center">
                 <div class="icon"> <i class="mi mi-HomeGroup"></i> </div>
-                <h4 class="info-title">可扩展性</h4>
-                <p class="description">即插即用的API优先架构。</p>
+                <h4 class="info-title">तानाना</h4>
+                <p class="description">प्लग एंड प्ले के लिए एपीआई-पहला आर्किटेक्चर।</p>
               </div>
             </div>
             <div class="col-md-3">
               <div class="info text-center">
                 <div class="icon"> <i class="mi mi-GiftboxOpen"></i> </div>
-                <h4 class="info-title">轻松备份</h4>
-                <p class="description">强大的1步导出功能。</p>
+                <h4 class="info-title">आसान बैकअप</h4>
+                <p class="description">शक्तिशाली 1 कदम निर्यात।</p>
               </div>
             </div>
             <div class="col-md-3">
               <div class="info text-center">
                 <div class="icon text-info"> <i class="mi mi-Cafe"></i> </div>
-                <h4 class="info-title">更多咖啡时间！</h4>
-                <p class="description">您可以放松身心，探索此处未列出的更多功能 ...</p>
+                <h4 class="info-title">अधिक कॉफी समय!</h4>
+                <p class="description">आप आराम कर सकते हैं और सुविधाओं के अधिक टन का पता लगा सकते हैं यहां सूचीबद्ध नहीं हैं ...</p>
               </div>
             </div>
           </div>
           <div class=space-50></div>
           <div class="row">
             <div class="col text-center"> <a href="https://github.com/mixcore/mix.core/releases" target="_blank"
-                class="btn btn-outline-info shadow-sm ">立即探索！</a> </div>
+                class="btn btn-outline-info shadow-sm ">अब अन्वेषण करें!</a> </div>
           </div>
         </div>
       </div>
@@ -551,7 +580,7 @@
             <div class="col-md-6 ml-auto mr-auto text-center">
               <div class="text-center">
                 <!-- <h2>5,322</h2> -->
-                <h3 class=desc>使用Mixcore CMS的全球开发人员和公司。</h3>
+                <h3 class=desc>मिक्सकोर CMS का उपयोग करके दुनिया भर के डेवलपर्स और कंपनियां।</h3>
               </div>
             </div>
           </div>
@@ -563,8 +592,8 @@
         <div class="container">
           <div class="row">
             <div class="col-md-5">
-              <h2 class="text-light">保持联系</h2>
-              <h4 class="description">您需要更多信息吗？ 给我们留言以contact[@]mixcore.org</h4>
+              <h2 class="text-light">संपर्क में रहो</h2>
+              <h4 class="description">आपको अधिक जानकारी चाहिए? हमें contact[@]mixcore.org पर एक संदेश छोड़ें</h4>
             </div>
             <div class="col-md-5 ml-auto mr-auto">
 
@@ -580,9 +609,9 @@
           <ul>
             <li> <a href="https://mixcore.org"> <img class="lazyload" alt="Mixcore CMS"
                   src="../assets/img/mixcore-logo-white.svg" height="16"> </a> </li>
-            <li> <a href="https://mixcore.org"> 关于我们 </a> </li>
-            <li> <a rel="noreferrer" href="https://medium.com/mixcore"> 博客 </a> </li>
-            <li> <a href="../top-open-source-asp-net-core-cms.html">评论顶级开源Asp.Net Core CMS </a> </li>
+            <li> <a href="https://mixcore.org"> हमारे बारे में </a> </li>
+            <li> <a rel="noreferrer" href="https://medium.com/mixcore"> ब्लॉग </a> </li>
+            <li> <a href="../top-open-source-asp-net-core-cms.html">टॉप ओपन सोर्स Asp.Net Core CMS की समीक्षा करें</a> </li>
           </ul>
         </nav>
         <div class="copyright" id="copyright"> &copy;
