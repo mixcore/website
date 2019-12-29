@@ -18,10 +18,12 @@
     <xhtml:link rel="alternate" hreflang="he" href="https://mixcore.org/he/" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://mixcore.org/hi/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://mixcore.org/fr/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mixcore.org/fr/" />
+    <xhtml:link rel="alternate" hreflang="fr-ch" href="https://mixcore.org/fr/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://mixcore.org/es/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://mixcore.org/de/" />
-		<xhtml:link rel="alternate" hreflang="de-de" href="https://mixcore.org/de/" />
-		<xhtml:link rel="alternate" hreflang="de-ch" href="https://mixcore.org/de/" />
+		<xhtml:link rel="alternate" hreflang="de-de" href="https://mixcore.org/de-de/" />
+		<xhtml:link rel="alternate" hreflang="de-ch" href="https://mixcore.org/de-ch/" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://mixcore.org/ar/" />
 
   </url>
